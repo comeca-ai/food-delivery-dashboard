@@ -1,0 +1,11 @@
+services:
+  # A web service running the Dash dashboard application
+  - type: web
+    name: food-delivery-dashboard
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+    autoDeploy: true
