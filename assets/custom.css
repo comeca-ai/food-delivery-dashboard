@@ -1,1 +1,26 @@
+/* Customizações gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Customizações específicas */
+.timeline-item {
+    display: inline-block;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .timeline-content {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    
+    .timeline-item {
+        margin-left: 0 !important;
+        margin-top: 5px !important;
+    }
+}
 
