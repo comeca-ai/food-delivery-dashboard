@@ -325,6 +325,7 @@ def create_app(data):
                    className="text-center text-muted")
         ], className="mt-4")
     ], fluid=True, className="px-4 py-3")
+    return app
     
     # Callbacks
     @app.callback(Output("market-share-pie", "figure"),
