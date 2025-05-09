@@ -680,4 +680,3 @@ def create_app(data):
         
         return fig
     
-    @
